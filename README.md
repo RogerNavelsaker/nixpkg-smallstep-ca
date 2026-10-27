@@ -1,11 +1,12 @@
-# Smallstep step-ca OCI image
+# Smallstep CLI and step-ca OCI image
 
-Nix-built x86_64 Linux image using the pinned Nixpkgs step-ca 0.30.2 package, step CLI, and step-kms-plugin.
+Nix-built x86_64 Linux image and step CLI using the pinned Nixpkgs step-ca 0.30.2 and step CLI 0.31.0 packages. The standalone CLI is the same derivation included in the image.
 
 ## Build
 
 ```sh
 nix flake check
+nix build .#step
 nix build .#image
 ```
 

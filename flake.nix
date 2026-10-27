@@ -96,6 +96,7 @@
         };
     in {
       packages.${system} = {
+        step = stepCli;
         inherit image;
         default = image;
       };
